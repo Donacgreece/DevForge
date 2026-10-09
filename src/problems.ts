@@ -10,3 +10,6 @@ export const problems:Problem[]=[
 {id:'two-sum',title:'Two Sum',level:'Medium',category:'Hash Maps',description:{en:'Given an integer array and target, return two distinct indices whose values sum to target. Exactly one solution exists.',el:'Για πίνακα αριθμών και στόχο, επέστρεψε δύο διαφορετικούς δείκτες των οποίων οι τιμές αθροίζονται στον στόχο. Υπάρχει μία λύση.'},example:'solve([2, 7, 11, 15], 9) → [0, 1]',hint:{en:'Store previously encountered values in a Map.',el:'Κράτησε προηγούμενες τιμές σε Map.'},starter:'function solve(nums, target) {\n  // Your code here\n}',tests:[{args:[[2,7,11,15],9],expected:[0,1]},{args:[[3,2,4],6],expected:[1,2]},{args:[[3,3],6],expected:[0,1]}]},
 {id:'balanced',title:'Balanced Brackets',level:'Hard',category:'Stacks',description:{en:'Return true if (), [] and {} brackets are correctly balanced.',el:'Επίστρεψε true αν οι παρενθέσεις (), [] και {} είναι σωστά ισορροπημένες.'},example:'solve("([])") → true',hint:{en:'Use a stack for open brackets.',el:'Χρησιμοποίησε στοίβα για τα ανοίγματα.'},starter:'function solve(text) {\n  // Your code here\n}',tests:[{args:['([])'],expected:true},{args:['([)]'],expected:false},{args:[''],expected:true},{args:['(()'],expected:false}]}
 ]
+
+import {additional} from './additional'
+problems.push(...additional)

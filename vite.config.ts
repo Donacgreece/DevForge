@@ -1,5 +1,2 @@
-﻿import { defineConfig } from 'vite'
-
-export default defineConfig({
-  base: '/DevForge/'
-})
+import { defineConfig } from 'vite'
+export default defineConfig({base:'/DevForge/'})
